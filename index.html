@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>KOH STORE</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    video#video-fondo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: #00f0ff;
+      text-shadow: 0 0 15px cyan;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .botones a {
+      background: #00e69f;
+      color: black;
+      padding: 10px 18px;
+      border-radius: 30px;
+      margin: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .botones a img {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 26px;
+      font-weight: bold;
+      text-shadow: 0 0 6px black;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .producto {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding: 15px;
+      width: 250px;
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fondo en video -->
+  <video autoplay muted loop id="video-fondo">
+    <source src="video/fondo.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+
+  <!-- Título -->
+  <h1>KOH STORE</h1>
+  <p>Bienvenido a tu tienda galáctica 🚀</p>
+
+  <!-- Botones -->
+  <div class="botones">
+    <a href="https://wa.me/974909117" target="_blank">
+      <img src="icons/whatsapp.png" width="20"> WhatsApp personal
+    </a>
+    <a href="https://www.tiktok.com/@kohstoreoficial1?_t=ZM-8xgTOFV0Dsj&_r=1" target="_blank">
+      <img src="icons/tiktok.png" width="20"> TikTok
+    </a>
+    <a href="https://t.me/+PE6IMvbvR5VjMDEx" target="_blank">
+      <img src="icons/telegram.png" width="20"> Telegram
+    </a>
+    <a href="https://chat.whatsapp.com/CWvAb608cjV4TsCFzHiFW7?mode=r_c" target="_blank">
+      <img src="icons/whatsapp-group.png" width="20"> Grupo WhatsApp
+    </a>
+  </div>
+
+  <!-- Productos -->
+  <h2>Nuestros productos destacados:</h2>
+  <div class="productos">
+
+    <div class="producto">
+      <img src="productos/smartfit.jpg" alt="Smart Fit">
+      <p>SMART FIT MEMBRESÍA BLACK ✅<br>1 MES S/50 — 3 MESES S/120 🔱<br>SE CANCELA DEUDAS AL 50%<br>⭐ Se brinda garantía</p>
+    </div>
+
+    <div class="producto">
+      <img src="productos/zeusdox.jpg" alt="Zeus Dox">
+      <p>⚡ ¡LLEGÓ ZEUS DOX! ⚡<br>Consulta DNI, C4, ANTECEDENTES, PLACAS, PAPELETAS, ÁRBOL GENEALÓGICO ✅<br>LICENCIA</p>
+    </div>
+
+    <div class="producto">
+      <img src="productos/vuelos.jpg" alt="Vuelos">
+      <p>✈️ Vuelos a:<br>📍Cajamarca, Chiclayo, Huánuco, Iquitos, Pucallpa, Tarapoto<br>🗓️ +7 días de anticipación</p>
+    </div>
+
+    <div class="producto">
+      <img src="productos/instagram.jpg" alt="Impulso Instagram">
+      <p>🔥 IMPULSO SEGUIDORES 🔥<br>Obtén seguidores reales<br>Ideal para marcas y ventas<br>✅ 100% confiable</p>
+    </div>
+
+  </div>
+
+  <footer>
+    Página creada por <strong>ShortNameLucifer</strong> - ©2025
+  </footer>
+
+</body>
+</html>
