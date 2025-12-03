@@ -1,0 +1,102 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║          🤖 BOT DE TELEGRAM - KOH STORE 🚀                  ║
+║                                                              ║
+║              ¡Tu tienda ahora en Telegram!                   ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+📋 CONTENIDO DEL PAQUETE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ bot.js              → Código principal del bot
+✅ package.json        → Configuración del proyecto
+✅ .env.example        → Plantilla de configuración
+✅ .gitignore          → Archivos a ignorar en Git
+✅ start.sh            → Script de inicio rápido
+✅ README.md           → Documentación completa
+✅ GUIA_RAPIDA.md      → Tutorial de 5 minutos
+✅ productos/          → Imágenes de productos
+✅ icons/              → Iconos de redes sociales
+
+
+🚀 INICIO RÁPIDO (3 PASOS):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  CREAR BOT EN TELEGRAM
+    • Busca @BotFather en Telegram
+    • Envía: /newbot
+    • Sigue las instrucciones
+    • Guarda el TOKEN que te da
+
+2️⃣  OBTENER TU ID
+    • Busca @userinfobot en Telegram
+    • Envía: /start
+    • Guarda tu ID
+
+3️⃣  CONFIGURAR Y EJECUTAR
+    • Copia .env.example a .env
+    • Edita .env con tu TOKEN e ID
+    • Ejecuta: npm install
+    • Ejecuta: npm start
+
+
+💻 COMANDOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+npm install            → Instalar dependencias
+npm start              → Iniciar el bot
+./start.sh             → Iniciar con script (Linux/Mac)
+node bot.js            → Iniciar directamente
+
+
+✨ CARACTERÍSTICAS DEL BOT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Catálogo de productos con imágenes
+✅ Carrito de compras
+✅ Sistema de pedidos automatizado
+✅ Notificaciones al administrador
+✅ Información de métodos de pago
+✅ Panel de administración (/admin)
+
+
+🛍️ PRODUCTOS INCLUIDOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏋️ Smart Fit Membresía    → S/50 - S/120
+⚡ Zeus Dox               → S/30
+✈️ Vuelos                 → Consultar
+🔥 Instagram Followers    → S/40 - S/350
+
+
+📖 DOCUMENTACIÓN:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📄 README.md           → Documentación completa
+📄 GUIA_RAPIDA.md      → Tutorial de 5 minutos
+
+
+🔧 PERSONALIZACIÓN:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Para modificar productos, edita el archivo bot.js
+Para agregar imágenes, colócalas en la carpeta productos/
+Para cambiar precios, edita la sección products en bot.js
+
+
+📞 SOPORTE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WhatsApp: +51 974909117
+Telegram: @kohstoreoficial
+Email: kohstore@gmail.com
+
+
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║  🎉 ¡TODO LISTO! Solo configura tu TOKEN y empieza 🚀      ║
+║                                                              ║
+║              Lee README.md para más detalles                 ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝

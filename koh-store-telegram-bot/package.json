@@ -1,0 +1,18 @@
+{
+  "name": "koh-store-telegram-bot",
+  "version": "1.0.0",
+  "description": "Bot de Telegram para KOH STORE - Tienda de servicios digitales",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["telegram", "bot", "store", "ecommerce"],
+  "author": "KOH STORE",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.64.0",
+    "dotenv": "^16.3.1"
+  }
+}
