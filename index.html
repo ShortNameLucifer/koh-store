@@ -2,145 +2,313 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>KOH STORE</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-      overflow-x: hidden;
-    }
-
-    video#video-fondo {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: -1;
-    }
-
-    h1 {
-      font-size: 50px;
-      color: #00f0ff;
-      text-shadow: 0 0 15px cyan;
-      margin-top: 30px;
-    }
-
-    p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .botones a {
-      background: #00e69f;
-      color: black;
-      padding: 10px 18px;
-      border-radius: 30px;
-      margin: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-    }
-
-    .botones a img {
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      font-size: 26px;
-      font-weight: bold;
-      text-shadow: 0 0 6px black;
-    }
-
-    .productos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .producto {
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 15px;
-      padding: 15px;
-      width: 250px;
-    }
-
-    .producto img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: white;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KOH STORE - Tu tienda galáctica de servicios digitales. Smart Fit, Zeus Dox, Vuelos y más.">
+  <meta name="keywords" content="smart fit, membresía gym, vuelos baratos, seguidores instagram, zeus dox">
+  <title>KOH STORE - Tu Tienda Galáctica 🚀</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Fondo en video -->
-  <video autoplay muted loop id="video-fondo">
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline id="video-fondo">
     <source src="video/fondo.mp4" type="video/mp4">
-    Tu navegador no soporta video.
   </video>
 
-  <!-- Título -->
-  <h1>KOH STORE</h1>
-  <p>Bienvenido a tu tienda galáctica 🚀</p>
+  <!-- Overlay oscuro para mejor legibilidad -->
+  <div class="overlay"></div>
 
-  <!-- Botones -->
-  <div class="botones">
-    <a href="https://wa.me/974909117" target="_blank">
-      <img src="icons/whatsapp.png" width="20"> WhatsApp personal
-    </a>
-    <a href="https://www.tiktok.com/@kohstoreoficial1?_t=ZM-8xgTOFV0Dsj&_r=1" target="_blank">
-      <img src="icons/tiktok.png" width="20"> TikTok
-    </a>
-    <a href="https://t.me/+PE6IMvbvR5VjMDEx" target="_blank">
-      <img src="icons/telegram.png" width="20"> Telegram
-    </a>
-    <a href="https://chat.whatsapp.com/CWvAb608cjV4TsCFzHiFW7?mode=r_c" target="_blank">
-      <img src="icons/whatsapp-group.png" width="20"> Grupo WhatsApp
-    </a>
-  </div>
+  <!-- Header con navegación -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>KOH STORE</h1>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+        <button class="cart-btn" id="cartBtn">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h2 class="hero-title">Bienvenido a tu Tienda Galáctica 🚀</h2>
+      <p class="hero-subtitle">Los mejores servicios digitales al alcance de tu mano</p>
+      <div class="hero-buttons">
+        <a href="#productos" class="btn btn-primary">Ver Productos</a>
+        <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redes Sociales -->
+  <section class="social-section">
+    <div class="container">
+      <h3>Síguenos en nuestras redes</h3>
+      <div class="social-buttons">
+        <a href="https://wa.me/974909117" target="_blank" class="social-btn whatsapp">
+          <img src="icons/whatsapp.png" alt="WhatsApp" width="24" height="24">
+          <span>WhatsApp Personal</span>
+        </a>
+        <a href="https://www.tiktok.com/@kohstoreoficial1?_t=ZM-8xgTOFV0Dsj&_r=1" target="_blank" class="social-btn tiktok">
+          <img src="icons/tiktok.png" alt="TikTok" width="24" height="24">
+          <span>TikTok</span>
+        </a>
+        <a href="https://t.me/+PE6IMvbvR5VjMDEx" target="_blank" class="social-btn telegram">
+          <img src="icons/telegram.png" alt="Telegram" width="24" height="24">
+          <span>Telegram</span>
+        </a>
+        <a href="https://chat.whatsapp.com/CWvAb608cjV4TsCFzHiFW7?mode=r_c" target="_blank" class="social-btn whatsapp-group">
+          <img src="icons/whatsapp-group.png" alt="Grupo WhatsApp" width="24" height="24">
+          <span>Grupo WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- Productos -->
-  <h2>Nuestros productos destacados:</h2>
-  <div class="productos">
+  <section class="products-section" id="productos">
+    <div class="container">
+      <h2 class="section-title">Nuestros Productos Destacados</h2>
+      <p class="section-subtitle">Servicios de calidad con garantía incluida</p>
+      
+      <div class="products-grid">
+        
+        <!-- Producto 1: Smart Fit -->
+        <div class="product-card" data-product="smartfit">
+          <div class="product-badge">Popular</div>
+          <div class="product-image">
+            <img src="productos/smartfit.jpg" alt="Smart Fit Membresía">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">SMART FIT Membresía Black</h3>
+            <p class="product-description">Membresía premium con acceso ilimitado. Cancela deudas al 50%. Garantía incluida.</p>
+            <div class="product-prices">
+              <div class="price-option">
+                <span class="price-label">1 Mes</span>
+                <span class="price">S/50</span>
+              </div>
+              <div class="price-option">
+                <span class="price-label">3 Meses</span>
+                <span class="price">S/120</span>
+              </div>
+            </div>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-add-cart" data-name="Smart Fit 1 Mes" data-price="50">
+                Agregar 1 Mes
+              </button>
+              <button class="btn btn-primary btn-add-cart" data-name="Smart Fit 3 Meses" data-price="120">
+                Agregar 3 Meses
+              </button>
+            </div>
+          </div>
+        </div>
 
-    <div class="producto">
-      <img src="productos/smartfit.jpg" alt="Smart Fit">
-      <p>SMART FIT MEMBRESÍA BLACK ✅<br>1 MES S/50 — 3 MESES S/120 🔱<br>SE CANCELA DEUDAS AL 50%<br>⭐ Se brinda garantía</p>
+        <!-- Producto 2: Zeus Dox -->
+        <div class="product-card" data-product="zeusdox">
+          <div class="product-badge new">Nuevo</div>
+          <div class="product-image">
+            <img src="productos/zeusdox.jpg" alt="Zeus Dox">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">⚡ Zeus Dox</h3>
+            <p class="product-description">Consulta DNI, C4, antecedentes, placas, papeletas, árbol genealógico y más.</p>
+            <div class="product-price-single">
+              <span class="price">Consultar</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/974909117?text=Hola,%20quiero%20información%20sobre%20Zeus%20Dox" target="_blank" class="btn btn-primary">
+                Consultar Precio
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 3: Vuelos -->
+        <div class="product-card" data-product="vuelos">
+          <div class="product-image">
+            <img src="productos/vuelos.jpg" alt="Vuelos Baratos">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">✈️ Vuelos Económicos</h3>
+            <p class="product-description">Cajamarca, Chiclayo, Huánuco, Iquitos, Pucallpa, Tarapoto. Reserva con +7 días de anticipación.</p>
+            <div class="product-price-single">
+              <span class="price">Desde S/99</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/974909117?text=Hola,%20quiero%20información%20sobre%20vuelos" target="_blank" class="btn btn-primary">
+                Consultar Destinos
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 4: Instagram -->
+        <div class="product-card" data-product="instagram">
+          <div class="product-badge">Trending</div>
+          <div class="product-image">
+            <img src="productos/instagram.jpg" alt="Seguidores Instagram">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">🔥 Impulso Instagram</h3>
+            <p class="product-description">Seguidores reales y activos. Ideal para marcas y ventas. 100% confiable y seguro.</p>
+            <div class="product-price-single">
+              <span class="price">Desde S/30</span>
+            </div>
+            <div class="product-actions">
+              <a href="https://wa.me/974909117?text=Hola,%20quiero%20información%20sobre%20impulso%20Instagram" target="_blank" class="btn btn-primary">
+                Ver Paquetes
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="producto">
-      <img src="productos/zeusdox.jpg" alt="Zeus Dox">
-      <p>⚡ ¡LLEGÓ ZEUS DOX! ⚡<br>Consulta DNI, C4, ANTECEDENTES, PLACAS, PAPELETAS, ÁRBOL GENEALÓGICO ✅<br>LICENCIA</p>
+  <!-- Testimonios -->
+  <section class="testimonials-section" id="testimonios">
+    <div class="container">
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <div class="testimonials-grid">
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Excelente servicio, la membresía de Smart Fit llegó al instante. 100% recomendado."</p>
+          <p class="testimonial-author">- María G.</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Zeus Dox es increíble, encontré toda la información que necesitaba. Muy profesional."</p>
+          <p class="testimonial-author">- Carlos R.</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Los vuelos más baratos que he encontrado. Atención rápida y confiable."</p>
+          <p class="testimonial-author">- Ana P.</p>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="producto">
-      <img src="productos/vuelos.jpg" alt="Vuelos">
-      <p>✈️ Vuelos a:<br>📍Cajamarca, Chiclayo, Huánuco, Iquitos, Pucallpa, Tarapoto<br>🗓️ +7 días de anticipación</p>
+  <!-- Contacto -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <h2 class="section-title">¿Tienes alguna pregunta?</h2>
+      <p class="section-subtitle">Contáctanos y te responderemos lo más pronto posible</p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>+51 974 909 117</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">⏰</span>
+            <div>
+              <h4>Horario</h4>
+              <p>Lun - Dom: 9:00 AM - 10:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🌎</span>
+            <div>
+              <h4>Ubicación</h4>
+              <p>Perú - Servicio Nacional</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Tu email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+        </form>
+      </div>
     </div>
+  </section>
 
-    <div class="producto">
-      <img src="productos/instagram.jpg" alt="Impulso Instagram">
-      <p>🔥 IMPULSO SEGUIDORES 🔥<br>Obtén seguidores reales<br>Ideal para marcas y ventas<br>✅ 100% confiable</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>KOH STORE</h3>
+          <p>Tu tienda galáctica de confianza</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <div class="footer-social">
+            <a href="https://wa.me/974909117" target="_blank">WhatsApp</a>
+            <a href="https://www.tiktok.com/@kohstoreoficial1?_t=ZM-8xgTOFV0Dsj&_r=1" target="_blank">TikTok</a>
+            <a href="https://t.me/+PE6IMvbvR5VjMDEx" target="_blank">Telegram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KOH STORE - Página creada por <strong>ShortNameLucifer</strong></p>
+      </div>
     </div>
-
-  </div>
-
-  <footer>
-    Página creada por <strong>ShortNameLucifer</strong> - ©2025
   </footer>
 
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/974909117" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+    <img src="icons/whatsapp.png" alt="WhatsApp" width="40" height="40">
+  </a>
+
+  <!-- Modal del Carrito -->
+  <div class="modal" id="cartModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>🛒 Tu Carrito</h3>
+        <button class="modal-close" id="closeCart">&times;</button>
+      </div>
+      <div class="modal-body" id="cartItems">
+        <p class="empty-cart">Tu carrito está vacío</p>
+      </div>
+      <div class="modal-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="total-price" id="totalPrice">S/0</span>
+        </div>
+        <button class="btn btn-primary btn-block" id="checkoutBtn">Proceder al Pago</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
